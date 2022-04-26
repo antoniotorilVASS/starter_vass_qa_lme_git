@@ -9,8 +9,8 @@
 /// <reference types="cypress" />
 
 describe('Visits', () => {
-   
     it('.should() - assert that <title> is correct', () => {
+        cy.viewport('iphone-6')
         cy.visit('https://antoniotorilvass.github.io/starter_vass_qa_lme_git/');
         cy.wait(200);
         cy.title().should('equal', 'Shop Item - Start Bootstrap Template');
@@ -19,8 +19,16 @@ describe('Visits', () => {
         cy.visit({
             url: 'index.html',
             method: 'GET',
-          })
+        })
         cy.wait(200);
         cy.title().should('equal', 'Shop Item - Start Bootstrap Template');
-    }); 
+    });
+    it('.should() - assert that <title> is correct', () => {
+        cy.visit({
+            url: 'index.html',
+            method: 'GET',
+        })
+        cy.wait(200);
+        cy.title().should('equal', 'Shop Item - Start Bootstrap');
+    });
 });
