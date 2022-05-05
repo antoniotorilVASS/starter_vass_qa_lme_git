@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Página Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    function validarEdad(e){
+        if(edad<=0 || edad>=101){
+        alert("La edad no es valida, debe de ser mayor que 0 y menor que 101")
+         } else if(edad>0 && edad<=10){
+        alert("Eres un niño")
+        }
+        else if(edad>=11 && edad<=17){
+        alert("You're a teennager")
+        }
+        else if(edad>=18 && edad<=26){
+        alert("Eres jovén")
+        }
+        else{
+        alert("Eres un adulto")
+        }
+        }
+
+        let edad=parseInt(prompt("Dame tu edad: "))
+
+        validarEdad(edad)
+
+</script>

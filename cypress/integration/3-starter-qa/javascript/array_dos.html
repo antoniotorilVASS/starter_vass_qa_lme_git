@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Página Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let frutas=["naranja","Pera","Melón","Sandia"]
+    //console.log("El número de elementos es: "+frutas.length)
+    console.log("Mostrar Pera: "+frutas[1])
+   /*
+   let datos={nom:'Rubén',ap:'Ruiz',am:"Muñoz"}
+   console.log(datos)
+   console.log(datos.nom)
+   */
+/*
+   frutas.forEach(function(elemento,indice,array){
+       
+       console.log("El elemento es: "+elemento)
+       console.log("El indice es: "+indice)
+       console.log("El array es: "+array)
+       
+       //console.log(elemento,indice)
+       console.log(indice,elemento)
+   })
+*/
+/*
+frutas.forEach(function(elemento,indice,array){
+    console.log(indice,elemento)
+})
+*/
+   //Agregar un elemento al final
+
+   let nuevoFinal=frutas.push('Piña')
+   let nuevoFinal2=frutas.push('Fresa')
+
+   //Eliminar el último elemento
+   //let eliminarUltimo=frutas.pop()
+
+
+
+//Agregar al principio
+let agregarPrincipio=frutas.unshift('Mamey')
+console.log("Se agrego Mamey")
+
+//Eliminar el Primero
+let eliminarPrimero=frutas.shift()
+console.log("Se elimino Mamey")
+
+
+
+//Encontrar elemento en una posición
+let buscarElemento=frutas.indexOf('Fresa')
+console.log("Elemento encontrado: "+buscarElemento)
+
+// Eliminar elemento por posición
+let buscarElemento2=frutas.indexOf('Pera')
+//let eliminarPos=frutas.splice(buscarElemento2, 1)
+/*frutas.forEach(function(elemento,indice,array){
+    console.log(indice,elemento)
+})
+*/
+console.log("Frutas uno")
+frutas.forEach(function(elemento,indice,array){
+    console.log(indice,elemento)
+})
+//Copiar todo el array a otro
+let frutas2=[]
+frutas2=frutas.slice();
+console.log("Esto es de Frutas 2")
+frutas2.forEach(function(elemento,indice,array){
+    console.log(indice,elemento)
+})
+</script>
